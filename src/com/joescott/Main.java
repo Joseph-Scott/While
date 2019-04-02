@@ -15,8 +15,26 @@ public class Main {
 //            count++;
 //        } while(count != 6);
 
+//        int number = 4;
+//        int finishNumber = 20;
+//
+//        while (number <= finishNumber) {
+//            number++;
+//            if(!isEvenNumber(number)) {
+//                continue;
+//            }
+//
+//            System.out.println("Even number " + number);
+//        }
+
+        // Modify the while code above
+        // Make it also record the total number of even numbers it has found
+        // and break once 5 are found
+        // and at the end, display the total number of even numbers found
+
         int number = 4;
         int finishNumber = 20;
+        int evenNumbersFound = 0;
 
         while (number <= finishNumber) {
             number++;
@@ -25,13 +43,15 @@ public class Main {
             }
 
             System.out.println("Even number " + number);
+
+            evenNumbersFound++;
+            if (evenNumbersFound >= 5) {
+                break;
+            }
+
         }
 
-        // Modify the while code above
-        // Make it also record the total number of even numbers it has found
-        // and break once 5 are found
-        // and at the end, display the total number of even numbers found
-
+        System.out.println("Total even numbers found = " + evenNumbersFound);
 
     }
 
