@@ -27,6 +27,11 @@ public class Main {
             System.out.println("Even number " + number);
         }
 
+        // Modify the while code above
+        // Make it also record the total number of even numbers it has found
+        // and break once 5 are found
+        // and at the end, display the total number of even numbers found
+
 
     }
 
